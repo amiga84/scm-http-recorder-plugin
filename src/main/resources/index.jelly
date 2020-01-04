@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+   Project send after building a json with the changes to the configured url.
+</div>

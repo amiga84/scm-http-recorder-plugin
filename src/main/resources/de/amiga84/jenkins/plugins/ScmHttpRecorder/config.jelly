@@ -1,0 +1,18 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  <f:entry field="url" title="URL" description="The url where the json is send to">
+    <f:textbox />
+  </f:entry>
+
+  <f:advanced>
+    <f:entry title="Server Stage" field="serverStage" description="The environment of the server">
+      <f:select />
+    </f:entry>
+
+    <f:entry title="Restart Server" field="restart" description="Do a server restart?">
+      <f:checkbox />
+    </f:entry>
+  </f:advanced>
+
+</j:jelly>
