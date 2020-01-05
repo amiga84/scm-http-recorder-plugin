@@ -29,7 +29,7 @@ node {
 
         git credentialsId: 'CREDENTIALS_HASH', url: 'GIT_URL'
 
-        fishRecorder(restart: true, serverStage: 'DEV', url: 'https://localhost:8080/test')
+        scmHttpRecorder(restart: true, serverStage: 'DEV', url: 'https://localhost:8080/test')
 
 }
 ```
