@@ -31,5 +31,9 @@ node {
 
         scmHttpRecorder(restart: true, serverStage: 'DEV', url: 'https://localhost:8080/test')
 
+        step([$class: 'ScmHttpRecorder', url: 'https://localhost:8080/test'])
+
+        scmHttpRecorder url: 'https://localhost:8080/test'
+
 }
 ```
